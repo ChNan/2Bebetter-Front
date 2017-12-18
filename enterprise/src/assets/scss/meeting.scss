@@ -1,0 +1,161 @@
+@mixin padding($top:null, $right:null, $bottom:null, $left:null) {
+    @if $top {
+        padding-top: $top;
+    }
+    @if $right {
+        padding-right: $right;
+    }
+    @if $bottom {
+        padding-bottom: $bottom;
+    }
+    @if $left {
+        padding-left: $left;
+    }
+}
+
+@mixin fontsize($size, $weight, $color) {
+    font-size: $size;
+    @if $weight {
+        font-weight: $weight;
+    }
+    @if $color {
+        color: $color;
+    }
+}
+
+@mixin border-radius($raidus) {
+    -webkit-border-radius: $raidus;
+    -moz-border-radius: $raidus;
+    border-radius: $raidus;
+}
+
+.el-button {
+    .iconfont {
+        margin-right: 5px;
+    }
+}
+
+.meet-title {
+    @include fontsize(24px, bold, #333333);
+}
+
+.g-wrap {
+    @include padding(null, 20px, 20px, 20px);
+    margin: 0;
+}
+
+.g-wrap-content {
+    @include padding(20px, 25px, null, 24px);
+    .el-button-group{
+      display: block;
+    }
+}
+
+.btn-normal {
+    background: transparent;
+    color: #1f2c3d;
+}
+
+.btn-active {
+    background: #2699f4!important;
+    color: white!important;
+}
+
+.btn-width {
+    width: 102px;
+}
+
+.position-center {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 400px;
+}
+
+.u-hint14 {
+    @include fontsize(14px, null, #b3b3b3);
+}
+
+.button-wrap {
+    .el-button{
+      width: 100px;
+    }
+
+}
+
+.yl-button {
+    width: 100px;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #1f2c3d;
+    margin: 0;
+    padding: 10px 15px;
+    border: 1px solid #b8c2cc;
+}
+
+h2 {
+    margin: -10px 0 10px;
+    padding-bottom: 19px;
+    font-size: 16px;
+    font-weight: bold;
+}
+h5{
+  margin:0;
+}
+.u-hint {
+    @include fontsize(12px, null, #b3b3b3);
+}
+
+.u-border-bottom {
+    border-bottom: 1px solid #e0e0e0;
+    span {
+        margin-left: 24px;
+        @include fontsize(16px, bold, #333333);
+        line-height: 60px;
+    }
+    h4 {
+        margin-left: 20px;
+    }
+}
+
+.f-tar {
+    text-align: right;
+}
+
+.f-tac {
+    text-align: center;
+}
+
+.m-fm {
+    width: 600px;
+}
+
+@media (min-width: 1200px)and (max-width:1460px) {
+    .g-large {
+        width: 50%;
+    }
+    .g-small {
+        width: 32%;
+    }
+}
+
+@media (min-width: 1460px)and (max-width:1760px) {
+    .g-large {
+        width: 56%;
+    }
+    .g-small {
+        width: 32%;
+    }
+}
+.m-bss-fm {
+    width: 620px;
+    h5 {
+        width: 135px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 4px;
+        padding-bottom: 24px;
+        color: #333;
+    }
+}

@@ -1,0 +1,224 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "微软雅黑", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    color: #333;
+}
+
+.f-fl {
+    float: left !important;
+}
+
+.f-fr {
+    float: right !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.placeholder {
+    color: #b3b3b3;
+}
+
+.el-table th>.cell .el-checkbox {
+    display: none;
+}
+
+
+/*
+解决IE9兼容问题
+*/
+
+a img {
+    border: none;
+}
+
+.el-table__body-wrapper {
+    min-height: 0%;
+    position: relative;
+}
+
+.g-bd {
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    min-height: calc(100% - 40px);
+    min-width: 935px;
+}
+
+
+/*
+页面上公用的样式
+*/
+
+.form-save-button {
+    .el-button {
+        min-width: 100px;
+    }
+}
+.form-save-button-small{
+    .el-button {
+        min-width: 91px;
+    }
+}
+
+.g-hd {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: solid 1px #e6e6e6;
+    padding: 0 20px;
+    h3 {
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: #333333;
+    }
+    .btn-right {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        float: right;
+        i {
+            font-size: 14px;
+        }
+    }
+}
+
+.g-box {
+    padding: 20px;
+}
+
+
+.el-table__empty-block {
+    min-height: 300px;
+    width: 100%!important;
+    text-align: left;
+    .u-empty {
+        width: 410px;
+    }
+}
+
+.green {
+    color: #2da881;
+}
+
+.icon-operation {
+    color: #999;
+    font-size: 18px;
+}
+
+tr:hover {
+    .icon-operation {
+        color: #2699f4;
+    }
+    .icon-shanchu {
+        color: #ff1515;
+    }
+}
+
+
+/*
+兼容max-height-swatch指令
+*/
+
+.el-table[max-height-swatch] .el-table__body {
+    width: 100%!important;
+}
+
+@media screen and (max-width: 1365px) {
+    .table-bar {
+        .el-pagination__sizes,
+        .el-pagination__jump {
+            display: none;
+        }
+    }
+}
+
+.u-orange {
+    .el-progress-bar__inner {
+        background-color: #f4a926;
+    }
+}
+
+.u-red {
+    .el-progress-bar__inner {
+        background-color: #f44326;
+    }
+}
+
+.el-message-box__message {
+    text-align: center;
+}
+
+.u-fm-label {
+    .el-form-item__label {
+        padding-right: 40px;
+    }
+}
+
+.small-i {
+    .iconfont {
+        font-size: 14px;
+    }
+}
+
+.wd400 {
+    width: 400px;
+}
+
+.el-form-item__label {
+    color: #333333;
+}
+
+.el-button-group .el-button {
+    border: 1px solid #b8c2cc;
+}
+
+.el-button-group .el-button.btn-active {
+    border: 1px solid #2699f4;
+}
+
+.el-loading-mask {
+    background-color: transparent;
+}
+
+.ico_docu {
+    background-size: 24px 100%;
+    background-position-x: 10px;
+}
+
+.el-popover {
+    .device-info {
+        .el-table__empty-block {
+            min-height: 60px;
+        }
+    }
+}
+.topIcon {
+    margin-bottom: -3px !important;
+    margin-top: -15px;
+}
+
+.el-message-box__title {
+    margin-bottom: 30px;
+}
+
+.el-message-box__content {
+    padding-top: 0;
+    margin-top: -10px;
+}
+.el-dropdown{
+    cursor: pointer;
+}
+
+.mt20{
+    margin-top: 20px;
+}

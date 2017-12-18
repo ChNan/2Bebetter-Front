@@ -1,0 +1,1 @@
+module.exports = i18n  = {"basic.settings":"Basic Settings","basic.timeZone":"Default time zone :","enterprise.summerTime":"Enable DST acquiescently :","enterprise.start":"Auto","enterprise.stop":"Disable","enterprise.save":"Confirm","enterprise.show":"English","enterprise.success":"Operation success"}

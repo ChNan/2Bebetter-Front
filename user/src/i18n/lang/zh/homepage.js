@@ -1,0 +1,1 @@
+module.exports = i18n  = {"homepage.video":"预约视频会议","homepage.join":"加入会议","homepage.control":"视频会议控制","homepage.meet":"预约会议室","homepage.tip":"该功能被企业管理员关闭，请联系企业管理员","homepage.recent":"近期会议","homepage.more":"更多","homepage.process":"进行中...","homepage.noconf":"您近期没有日程安排","homepage.tomorrow":"明天","homepage.today":"今天","homepage.platform":"视频会议管理平台"}

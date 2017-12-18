@@ -1,0 +1,429 @@
+@import './var.scss';
+@import './_layout';
+html,
+body {
+    min-height: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', 'Microsoft YaHei', 'Noto Sans CJK SC', Sathu, 'EucrosiaUPC', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $body-bg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+h5 {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.f-fl {
+    float: left !important;
+}
+
+.f-fr {
+    float: right !important;
+}
+
+.f-tac {
+    text-align: center;
+}
+
+.f-tal {
+    text-align: left;
+}
+
+.f-tar {
+    text-align: right;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+
+.placeholder {
+    color: #b3b3b3;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both
+}
+
+
+/*
+解决IE9兼容问题
+*/
+
+.el-table__body-wrapper {
+    min-height: 0%;
+    position: relative;
+}
+
+.sidebar-hover-elem {
+    width: 4px;
+    background: #386b94;
+    position: absolute;
+    left: 212px;
+    transition: all 0.5s ease;
+    transition-property: top, height;
+    height: 54px;
+    display: block;
+}
+
+a.danger {
+    color: $warning;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a.disabled {
+    color: $light-grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@mixin menutile() {
+    font-size: 80px;
+    color: $white;
+    text-align: center;
+}
+
+@mixin rect() {
+    height: 80px;
+    width: 80px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+    color: $white;
+}
+
+@mixin fontsize($size, $weight, $color) {
+    font-size: $size;
+    @if $weight {
+        font-weight: $weight;
+    }
+    @if $color {
+        color: $color;
+    }
+}
+
+.m-menu__cloud {
+    background: $icon-blue;
+    @include menutile();
+}
+
+.m-menu__room {
+    background: $icon-green;
+    @include menutile();
+}
+
+.m-menu__port {
+    background: $icon-orange;
+    @include menutile();
+}
+
+.m-small__cloud {
+    background: $icon-blue;
+    @include rect();
+}
+
+.m-small__port {
+    background: $icon-orange;
+    @include rect();
+}
+
+.m-small__room {
+    background: $icon-green;
+    @include rect();
+}
+
+.m-small__free {
+    background: $icon-purple;
+    @include rect();
+}
+
+@mixin icon() {
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.g-hd {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 20px;
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 36px;
+
+    }
+}
+
+.g-box {
+    padding: 20px;
+
+}
+.u-logo__cloud {
+    background: url('assets/img/cloud.png');
+    @include icon();
+}
+
+.u-logo__free {
+    background: url('assets/img/free.png');
+    @include icon();
+}
+
+.u-logo__port {
+    background: url('assets/img/port.png');
+    @include icon();
+}
+
+.u-logo__room {
+    background: url('assets/img/room.png');
+    @include icon();
+}
+
+.m-default {
+    border: 1px solid #b3b3b3;
+}
+
+.m-logo {
+    color: $white;
+    background: $logo;
+    text-align: center;
+    padding: 26.5px;
+    border: 1px solid $logo;
+}
+
+.i-user {
+    font-size: 32px;
+    float: left;
+}
+
+.el-card {
+    overflow: auto;
+}
+
+.u-link {
+    margin-top: -60px;
+    font-size: 14px;
+}
+
+.m-small {
+    .el-dialog--tiny {
+        width: 400px;
+    }
+}
+
+.topIcon.success {
+    color: #40bd6f;
+}
+
+.el-message-box__message {
+    text-align: center;
+}
+
+.el-table__empty-block {
+    min-height: 210px;
+    width: 100%!important;
+    text-align: left;
+    .u-empty {
+        width: 100%;
+        margin-top: 20px;
+        .u-tbtip {
+            width: 35%;
+            margin: 0 auto;
+        }
+    }
+    .el-table__empty-text {
+        width: 100%;
+    }
+}
+
+.u-search-label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #48566a;
+    line-height: 1;
+    width: 100px;
+    padding: 11px 12px 11px 0;
+    box-sizing: border-box;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.small-i {
+    .iconfont {
+        font-size: 14px;
+    }
+}
+
+.btn100 {
+    width: 100px;
+}
+
+.btn80 {
+    width: 80px;
+}
+
+.u-select {
+    width: 149px;
+    margin-right: 10px;
+}
+
+.u-btn-m3 {
+    margin-left: 5px;
+}
+
+.icon-operation {
+    color: #999;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+tr:hover {
+    .icon-operation {
+        color: #2699f4;
+    }
+}
+
+.m-bss-fm {
+    width: 620px;
+    h5 {
+        width: 135px;
+        text-align: right;
+        padding-right: 45px;
+        padding-top: 4px;
+        padding-bottom: 24px;
+        color: #333;
+    }
+}
+
+.u-fm-label {
+    .el-form-item__label {
+        padding-right: 40px;
+    }
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.pdr5 {
+    padding-right: 5px;
+}
+
+.txt-tip1 {
+    font-size: 12px;
+    color: #b3b3b3;
+}
+
+.txt-tip2 {
+    font-size: 12px;
+    color: #999;
+}
+
+.wid200 {
+    min-width: 400px;
+}
+
+.el-loading-mask {
+    background-color: transparent;
+}
+
+.u-tbtip {
+    h4 {
+        font-size: 18px;
+        font-weight: normal;
+        color: #333;
+        text-align: left;
+    }
+    .searchkey {
+        white-space: nowrap;
+        max-width: 100px;
+        display: inline-block;
+        margin: 0;
+        font-size: 19px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+    img {
+        float: left;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        min-height: 100%;
+    }
+    ul {
+        margin: 16px 0 16px 18px;
+        color: #999;
+        font-size: 14px;
+        padding: 0;
+        li>span {
+            margin-left: -18px;
+            line-height: 24px;
+        }
+        li {
+            line-height: 22px;
+        }
+        li:last-child {
+            list-style: none;
+        }
+    }
+}
+.page{
+    background-image:url('assets/img/noSearch.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 128px;
+
+}
+

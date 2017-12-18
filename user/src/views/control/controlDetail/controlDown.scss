@@ -1,0 +1,135 @@
+/*----------表格--------------*/
+    .u-table {
+        width: 100%;
+        border: 0;
+        /*表头背景色*/
+        .s-bgc-title {
+            background-color: #7dd1fa;
+        }
+        /*左侧栏背景色*/
+        .s-bg-left {
+            background-color: rgba(125, 209, 250, 0.5);
+        }
+        /*左侧宽度*/
+        .s-w-empty {
+            height: 34px;
+            width: 145px;
+            min-width: 145px;
+        }
+        /*左侧字体*/
+        .f-lineh-15 {
+            line-height: 1.5;
+        }
+        .s-fw {
+            font-weight: normal;
+            text-align: left;
+            font-size: 14px;
+            padding-left: 26px;
+        }
+        /*表格内数据所在行颜色*/
+        /*禁言图标位置*/
+        .g-mute-p {
+            position: relative;
+        }
+        .g-mute {
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+        }
+        /*隔行颜色*/
+        .bgcolor {
+            background-color: #f5f5f6;
+        }
+        /*分享图标大小*/
+        .f-fs-28 {
+            font-size: 28px;
+        }
+        .f-fs-38 {
+            font-size: 38px;
+        }
+        .padding {
+            paddding: 22px, 12px, 22px, 17px;
+        }
+        .mastericon {
+            color: #fca504!important;
+        }
+        .color-yellow {
+            color: #fca504;
+        }
+        .color-blue {
+            color: #1b97f4;
+        }
+        .color-red {
+            color: #fa5050;
+        }
+        .color-gray {
+            color: #b9b9b9;
+        }
+        .color-forbid {
+            color: #e0e0e0;
+        }
+        .color-detail {
+            color: #b0b6bf;
+        }
+        .color-detail:hover {
+            color: #2196f3;
+        }
+        .color-detail:active {
+            color: #2196f3;
+            opacity: 0.8;
+        }
+        .color-blue2 {
+            color: #5fb1d6;
+        }
+        .apply-color:hover {
+            opacity: 0.6;
+        }
+        .g-paddingr-89 {
+            padding-right: 89px;
+        }
+        .g-paddingr-100 {
+            padding-right: 100px;
+        }
+        td {
+            font-size: 12px;
+            padding-left: 26px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+        /*无数据时*/
+        .paddingtb {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        .v-align {
+            vertical-align: middle;
+        }
+        .f-color {
+            color: #757575
+        }
+    }
+
+
+/*移除弹窗*/
+
+.dialog-remove {
+    width: 1000px;
+    margin: auto auto;
+}
+
+
+/*禁言弹窗*/
+
+.dialog-forbid {
+    width: 900px;
+    margin: auto auto;
+}
+
+
+/*设置弹窗*/
+
+.dialog-set {
+    width: 1000px;
+    margin: auto auto;
+}
+

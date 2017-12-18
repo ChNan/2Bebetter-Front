@@ -1,0 +1,127 @@
+
+.g-main {
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+    background: url("../../assets/img/bg.jpg");
+    background-size: cover;
+    background-position: 50%;
+    // overflow: hidden;
+    min-width: 420px;
+
+    .m-container {
+        height: 100%;
+        min-height: 600px;
+        text-align: center;
+        min-width: 420px;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 0;
+            vertical-align: middle;
+        }
+
+        //登录框
+        .m-wrap {
+            width: 300px;
+            margin: 0 auto;
+            display: inline-block;
+            vertical-align: middle;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+            padding: 38px 40px 24px;
+            text-align: left;
+            //登录标题
+            .u-tt {
+                font-size: 24px;
+                text-align: center;
+                margin-bottom: 14px;
+                color: #333;
+                height: 32px;
+                line-height: 32px;
+            }
+
+            .u-tip {
+                font-size: 13px;
+                color: #999;
+                height: 20px;
+                line-height: 20px;
+                display: block;
+            }
+
+            .m-menu {
+                height: 20px;
+                line-height: 20px;
+                margin-top: 20px;
+                margin-bottom: 18px;
+
+                .el-checkbox {
+                    float: left;
+                    color: #333;
+                }
+
+                a {
+                    color: #999;
+                    font-size: 14px;
+                    float: right;
+
+                    &:hover {
+                        color: #2699f4;
+                    }
+
+                    &:focus {
+                        color: #2288d6;
+                    }
+                }
+            }
+
+            .u-captcha {
+                cursor: pointer;
+            }
+
+            .el-form-item {
+                &:first-child {
+                    margin-top: 32px;
+                }
+            }
+
+            .el-button {
+                width: 100%;
+                margin-bottom: 10px;
+                margin-top: 12px;
+            }
+
+            .u-back {
+                font-size: 14px;
+                color: #2699f4;
+                display: block;
+                height: 20px;
+                line-height: 20px;
+
+                &:hover{
+                    color: #2288d6;
+                }
+            }
+        }
+    }
+
+    .m-footer {
+        margin-top: -60px;
+        text-align: center;
+
+        .u-copyright {
+            line-height: 60px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    .dialog-error {
+        width: 1000px;
+        margin: auto auto;
+        text-align: center;
+    }
+}

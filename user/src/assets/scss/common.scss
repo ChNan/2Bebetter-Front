@@ -1,0 +1,200 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Microsoft YaHei','PingFang SC','Helvetica Neue','Microsoft YaHei','Noto Sans CJK SC',Sathu,'EucrosiaUPC',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+}
+
+.f-fl {
+    float: left !important;
+}
+
+.f-fr {
+    float: right !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.placeholder{
+    color: #b3b3b3;
+}
+
+
+/*
+解决IE9兼容问题
+*/
+
+.el-table__body-wrapper {
+    overflow: auto;
+    min-height: 0;
+    position: relative;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .2s
+}
+.fade-enter, .fade-leave-to  {
+    opacity: 0
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+
+
+.tooltip-enter-active, .tooltip-leave-active {
+    transition:all 0.5s;
+}
+
+.tooltip-enter, .tooltip-leave-to  {
+    opacity: 0;
+}
+
+
+
+
+.slide-enter-active, .slide-leave-active {
+    transition: all 0.2s;
+    max-height: 1000px;
+}
+
+.slide-enter, .slide-leave-to{
+
+    max-height: 0;
+}
+
+// .el-dialog {
+//     border-radius: 4px;
+// }
+// .el-dialog__header {
+//     text-align: center;
+//     background: #f1f1f1;
+//     padding-top:11px;
+//     padding-bottom:11px;
+//     border-radius:4px 4px 0 0;
+// }
+// .el-dialog__title {
+//     font-size: 22px;
+//     font-weight: normal;
+// }
+// .el-dialog__body {
+//     padding:2em 3em 0 3em;
+// }
+
+// .el-dialog__footer {
+//     padding:2em;
+// }
+
+// .el-transfer-panel {
+//     width: 45%;
+//     height: 450px;
+// }
+// .el-dialog__header{
+//     border-bottom: 1px solid #E0E0E0;
+// }
+
+ .el-tag--primary .el-tag__close:hover {
+     background-color:#e9f5fe;
+     color: #ef1010;
+ }
+
+ .el-tooltip__popper.is-light  {
+     border: 1px solid #bfd0d9 !important;
+ }
+
+ .el-tooltip__popper.is-light[x-placement^=top] .popper__arrow{
+     border-top-color:#bfd0d9 !important;
+ }
+ .el-dialog__headerbtn{
+     padding-top: 5px;
+ }
+
+.topIcon.success {
+    color: #40bd6f;
+}
+
+.wd400 {
+    width: 400px;
+}
+
+.u-takeup-alert{
+    img {
+        height:100%;
+        background: #50bfff;
+    }
+}
+.u-takeup-alert .el-message__group{
+    height: auto;
+}
+.u-takeup-alert .el-message__group:after{
+    content: " ";
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+.u-takup-alert-content{
+    position: relative;
+    top:0;
+}
+
+.u-dialog-size {
+    min-width: 850px;
+}
+
+.dropdown-tree-content .el-input input{
+    cursor: pointer !important;
+}
+.u-cycle-select-option{
+    margin-top: -3px;
+}
+.video .el-input__icon {
+    display: none !important;
+}
+
+.video .transfer{
+    min-width: 800px;
+    .search {
+        max-height: 300px;
+    }
+}
+
+
+.el-message-box__header .icon-cuowuleitishi {
+    color:#ff4949 !important;
+}
+
+.el-message-box__title {
+    margin-bottom: 30px;
+}
+
+.el-message-box__content {
+    padding-top: 0;
+    margin-top: -10px;
+}
+.invite-pd20 {
+    width:60% !important;
+}
+.invite-pd20 .el-dialog__body{
+    padding: 20px ;
+
+}
+
+.u-dialog-tip {
+    min-width: 420px;
+}
+.u-dialog-preview{
+    min-width:690px;
+}

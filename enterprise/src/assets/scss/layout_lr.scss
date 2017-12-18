@@ -1,0 +1,183 @@
+.clearfix {
+    clear: both;
+}
+
+.g-lr {
+    margin: 20px;
+    height: calc(100% - 100px);
+    .left {
+        border: solid 1px #e6e6e6;
+        padding: 0px;
+        width: calc(22% - 2px);
+        float: left;
+        height: 100%;
+    }
+    .right {
+        border: solid 1px #e6e6e6;
+        float: right;
+        width: calc(78% - 62px);
+        padding: 20px;
+        height: calc(100% - 40px);
+        overflow: hidden;
+        overflow-y: auto;
+        .el-table .cell {
+            /*   padding-left: 0;
+               padding-right: 0;*/
+        }
+        .tooltip-general {
+            color: #9ca9f3;
+            font-size: 18px;
+        }
+        .tooltip-video {
+            color:#ffc157;
+            font-size: 18px;
+        }
+        .tooltip-vmr {
+            color: #72cfa9;
+            font-size: 18px;
+        }
+        .tooltip-cloud {
+            color: #94c7fb;
+            font-size: 18px;
+        }
+        .tooltip-text {
+            display: inline-block;
+            max-width: 250px;
+            min-width: 120px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            vertical-align: middle;
+        }
+        .form-box {
+            min-width: 600px;
+            max-width: 715px
+        }
+        .el-select {
+            display: block;
+        }
+        .both {
+            font-weight: 700;
+            .el-form-item__label {
+                padding-right: 18px;
+            }
+        }
+        .title {
+            font-size: 15px;
+            font-weight: bold;
+            text-align: left;
+            color: #333333;
+            padding: 0;
+            height: 40px;
+            line-height: 30px;
+            margin-top: -10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .head-img {
+            position: absolute;
+            .alert {
+                position: absolute;
+                bottom: 4px;
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.45);
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                border-radius: 0 0 6px 6px;
+                color: #fff;
+            }
+            img {
+                max-width: 100%;
+                width: 98px;
+                min-width: 98px;
+                height: 98px;
+                border-radius: 6px;
+                background-color: #d1ddf0;
+            }
+        }
+        .layer {
+            height: 12px;
+            font-size: 12px;
+            text-align: left;
+            color: #999999;
+            font-weight: 100;
+            line-height: 16px;
+            display: inline-block;
+            width: 100%;
+        }
+        .layer-title {
+            font-size: 14px;
+            line-height: 1.14;
+            text-align: left;
+            color: #333333;
+        }
+        .inline-item {
+            .el-input {
+                max-width: calc(100% - 92px);
+            }
+            .el-button {
+                width: 80px;
+                float: right;
+            }
+        }
+    }
+    .right-tooltip-cell {
+        .cell {
+            padding: 0;
+            position: absolute;
+            right: -33px;
+            top: 7.5px;
+            z-index: 10;
+        }
+    }
+    .right-tooltip-next-cell {
+        .el-tooltip {
+            padding-left: 38px;
+        }
+    }
+}
+
+.dialog-footer {
+    padding-top: 20px;
+    text-align: center;
+    .el-button {
+        min-width: 100px;
+    }
+}
+
+.ed30 {
+    width: 30%;
+    min-width: 500px;
+}
+
+.ed50 {
+    width: 40%;
+    max-width: 50%;
+    min-width: 650px;
+}
+
+@media screen and (min-width: 1600px) {
+    .g-lr {
+        .left {
+            width: 320px;
+        }
+        .right {
+            width: calc(100% - 382px);
+        }
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .g-lr {
+        .left {
+            width: 220px;
+        }
+        .right {
+            width: calc(100% - 282px);
+            min-width: 610px;
+        }
+    }
+}

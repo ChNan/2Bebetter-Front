@@ -1,0 +1,41 @@
+.s-hr {
+    border-bottom: 1px solid darkgray;
+    border-color: rgba(0, 0, 0, 0.4);
+    /*------------第一行------------*/
+    /*标题*/
+    .g-title {
+        width: 234px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+    .color-title {
+        color: #000000;
+    }
+    /*锁*/
+    .g-height-24 {
+        height: 24px;
+    }
+    /*------------第二行*/
+    .color-col-two {
+        color: #444444;
+    }
+    .g-col-two {
+        letter-spacing: -0.3px;
+        height: 14px;
+        .s-right {
+            .f-fc {
+                color: #2196f3;
+            }
+            .g-ing {
+                /*width: 170px;*/
+                height: 12px;
+                letter-spacing: 0px;
+            }
+            .f-viewers {
+                /*width: 49px;*/
+                height: 12px;
+            }
+        }
+    }
+}

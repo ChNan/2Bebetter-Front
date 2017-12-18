@@ -1,0 +1,1 @@
+module.exports = i18n  = {"title.videoConf":"Schedule Video Conference","title.meetConf":"Schedule Meeting Room","title.videoDetail":"Video Conference Scheduling Details ","title.roomDetail":"Meeting Room Scheduling Details ","title.controlConf":"Conference Control","title.schedule":"My Schedule","title.back":"Back"}

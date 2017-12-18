@@ -1,0 +1,1 @@
+module.exports = i18n  = {"title.videoConf":"预约视频会议","title.meetConf":"预约会议室","title.videoDetail":"视频会议预约详情 ","title.roomDetail":"会议室预约详情 ","title.controlConf":"视频会议控制","title.schedule":"我的日程表","title.back":"返回上一级"}

@@ -1,0 +1,1 @@
+module.exports = i18n  = {"popUpWindow.tipContent":"Has not been saved, Are they saved?","popUpWindow.tip":"Tip","popUpWindow.confirm":"Confirm","popUpWindow.cancel":"Cancel","popUpWindow.tipContentSend":"Has not been saved, Are they saved and sent？","popUpWindow.delete.data":"Delete the department and related data, confirm to delete？"}

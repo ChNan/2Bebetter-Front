@@ -1,0 +1,1 @@
+module.exports = i18n  = {"popUpWindow.tipContent":"当前内容已变更，是否保存？","popUpWindow.tip":"提示","popUpWindow.confirm":"确定","popUpWindow.cancel":"取消","popUpWindow.tipContentSend":"当前内容已变更，是否保存后发送？","popUpWindow.delete.data":"删除后，所有数据会丢失，不可恢复。"}
